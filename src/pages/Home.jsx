@@ -13,7 +13,6 @@ function Home() {
             setData(response.data)
         })
     }
-
     useEffect(() => {
         handleProducts()
     },[])
