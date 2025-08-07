@@ -10,7 +10,7 @@ function Products(props) {
 
             <div className="flex justify-between px-4 mt-4 mb-2">
             <h1 className="text-3xl font-semibold">{props.productName}</h1>
-            <p className="text-3xl font-semibold">{props.productPrice}</p>
+            <p className="text-3xl font-semibold">{props.productPrice}$</p>
             </div>
             <button className="bg-green-950 text-white w-full py-2">Add to cart</button>
         </div>

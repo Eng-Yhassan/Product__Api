@@ -8,16 +8,15 @@ import Footer from "../components/Footer";
 function Home() {
     const [Data, setData] = useState([])
 
-    const HandleProducts = () => {
+    const handleProducts = () => {
         axios.get("https://fakestoreapi.com/products").then((response) => {
             setData(response.data)
         })
     }
 
     useEffect(() => {
-        HandleProducts();
-    }, []);
-
+        handleProducts()
+    },[])
     return (
         <div>
             <Profile />
@@ -25,7 +24,7 @@ function Home() {
             <div className="flex flex-wrap sm:gap-12 gap-2 justify-center mt-12 pt-20 pb-24">
 
                 {
-                    Data.slice(6, 14).map((item) => {
+                    Data.slice(10,18).map((item) => {
                         return (
                             <div>
                                 <Products productImage={item.image} productName={item.category} productPrice={item.price} />
@@ -36,7 +35,7 @@ function Home() {
                 }
             </div>
 
-                <Footer/>
+            <Footer />
         </div>
     )
 }
