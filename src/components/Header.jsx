@@ -9,11 +9,9 @@ function Header() {
     const handleIsClose=()=>{
         setIsOpen(false)
     }
-
     return (
         <div>
             <div className="flex justify-between items-center bg-green-950 px-12 py-4 text-white fixed z-20 w-full">
-
                 <h1 className="text-3xl font-bold">JM9</h1>
                 {/* Shashada weyn */}
                 <div className="flex gap-10 items-center text-2xl">
@@ -30,7 +28,6 @@ function Header() {
                         display : open === true ? "block" : ""
                     }} onClick={handleIsClose} className="fa-solid fa-x hidden"></i>
                 </div>
-
             </div>
             {/* Mobile  */}
             <div style={{

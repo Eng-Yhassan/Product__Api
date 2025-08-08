@@ -1,10 +1,8 @@
 import ImageProfile from "../Images/Home/Profile/Image1.avif"
 
-
 function Profile() {
   return (
    <div>
-    
     <div className="flex sm:flex-row flex-col gap-8 justify-between sm:px-36 px-10 sm:py-20 pt-20 sm:pt-36">
         {/* Left div */}
         <div className="mt-10 sm:w-[45%]">
@@ -20,5 +18,4 @@ function Profile() {
    </div>
   )
 }
-
 export default  Profile;

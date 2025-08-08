@@ -1,7 +1,5 @@
 import ImageProfile from "../Images/Home/Profile/Image1.avif"
 
-
-
 function Products(props) {
   return (
    <div className="">
@@ -17,5 +15,4 @@ function Products(props) {
    </div>
   )
 }
-
 export default  Products;

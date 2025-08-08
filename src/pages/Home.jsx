@@ -4,10 +4,8 @@ import Profile from "../components/Profile";
 import axios from "axios";
 import Footer from "../components/Footer";
 
-
 function Home() {
     const [Data, setData] = useState([])
-
     const handleProducts = () => {
         axios.get("https://fakestoreapi.com/products").then((response) => {
             setData(response.data)
@@ -19,9 +17,7 @@ function Home() {
     return (
         <div>
             <Profile />
-
             <div className="flex flex-wrap sm:gap-12 gap-2 justify-center mt-12 pt-20 pb-24">
-
                 {
                     Data.slice(10,18).map((item) => {
                         return (
@@ -30,13 +26,10 @@ function Home() {
                             </div>
                         )
                     })
-
                 }
             </div>
-
             <Footer />
         </div>
     )
 }
-
 export default Home;
