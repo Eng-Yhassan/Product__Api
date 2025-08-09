@@ -38,7 +38,7 @@ function Header() {
             <div style={{
                 display: open === true ? "block" : ""
             }} className="hidden  gap-10 items-center text-2xl">
-                <ul className="  gap-12 flex flex-col bg-green-950 w-full text-white -mt-[0.5px] text-center p-8">
+                <ul className="  gap-12 flex flex-col bg-green-950 w-full text-white pt-20 text-center p-8">
                     <NavLink to="/">  <li>Home</li> </NavLink>
                     <NavLink to="/About">  <li>About</li> </NavLink>
                     <NavLink to="/Contact">  <li>contact us</li> </NavLink>
