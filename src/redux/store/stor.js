@@ -7,5 +7,4 @@ const configStore= configureStore({
         newCounter: counterSlice
     }
 })
-
 export default configStore
